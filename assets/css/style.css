@@ -566,7 +566,7 @@
     line-height: normal;
 }
 
-.bar {
+.menuicon {
     display: none;
     z-index: 15;
 }
@@ -602,23 +602,49 @@
     min-height: 108px;
 }
 
-.hide-menu {
-    background-color: #2059c1;
-    height: 100%;
-    width: 100%;
-    z-index: 11;
-    left: -100%;
-    top: 0%;
+.width-870 {
+    max-width: 870px;
 }
 
 @media (max-width:992px) {
-    .bar {
+    .menuicon {
         display: flex;
+        z-index: 5;
+        margin-right: 5%;
+    }
+
+    .bg-1 {
+        background-color: rgba(0, 0, 0, 0.8);
+        width: 100%;
+        left: 0%;
+        top: 0%;
+        z-index: 22;
+    }
+
+    .z-index-5 {
         z-index: 5;
     }
 
+    .pstn-fix {
+        position: fixed;
+    }
+
     .menu {
-        display: none;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(147, 147, 232);
+        position: fixed;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+
+    .menu.show {
+        left: 0%;
     }
 
     .wv-50 {
@@ -633,11 +659,16 @@
         width: 22%;
     }
 
+    .border-r {
+        border-radius: 114px;
+    }
+
     .pd-tb-17 {
         padding-top: 17px;
         padding-bottom: 17px;
     }
 }
+
 @media (min-width:576px) {
     .col-sm-12 {
         width: 100%;
@@ -675,9 +706,27 @@
         padding-right: 12px;
     }
 
+    .col-md-4 {
+        width: 33.33%;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .right-border-11::after {
+        content: '';
+        position: absolute;
+        border-right: 3px solid #FFFFFF;
+        height: 100%;
+        width: 100%;
+    }
+
+    .box-11 {
+        padding: 20px;
+    }
+
 }
 
-@media (min-width:576px) and (max-width:992px) {
+@media (min-width:576px) and (max-width:768px) {
     .box-11::after {
         content: '';
         position: absolute;
@@ -734,15 +783,15 @@
         font-size: 36px;
     }
 
+    .radius-150 {
+        border-radius: 150px;
+    }
+
     .right-border::after {
         content: '';
         position: absolute;
         border-right: 3px solid #FFFFFF;
         height: 100%;
         width: 100%;
-    }
-
-    .radius-150 {
-        border-radius: 150px;
     }
 }

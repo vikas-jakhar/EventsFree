@@ -7,14 +7,14 @@
     <title>EventsFree</title>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="icon" href="./assets/image/logo.png">
-    <script src="./assets/js/js.js"></script>
+
 </head>
 
 <body>
     <section class="sctn-1 d-flex justiy-center">
         <div class="container z-index-1">
-            <nav class="d-flex justiy-between align-center pd-top-15 pstn-rel">
-                <div class="d-flex gap-10 align-center">
+            <nav class="d-flex justiy-between align-center pd-top-15 pstn-fix bg-1">
+                <div class="d-flex gap-10 align-center z-index-5">
                     <img src="./assets/image/logo.png" alt="" class="wv-22">
                     <a href="" class="heading">Events<span>Free</span></a>
                 </div>
@@ -26,22 +26,12 @@
                     <li class="log-out d-flex align-center"><a href="" class="heading-text font-weight-600">Log Out</a>
                     </li>
                 </ul>
-                <span class="bar cursor-p">
+                <span class="menuicon cursor-p">
                     <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M9 12H0V10H9V12ZM18 7H0V5H18V7ZM18 2H9V0H18V2Z" fill="white" />
                     </svg>
                 </span>
             </nav>
-            <div class="pstn-ab hide-menu pstn-ab d-flex align-center justiy-center">
-                <ul class="d-flex flex-dir gap-35 align-center">
-                    <li><a href="" class="heading-text font-weight-600">HOME</a></li>
-                    <li><a href="" class="heading-text z-index-1">EVENTS</a></li>
-                    <li><a href="" class="heading-text">FEED</a></li>
-                    <li><a href="" class="heading-text">USER NAME</a></li>
-                    <li class="log-out d-flex align-center"><a href="" class="heading-text font-weight-600">Log Out</a>
-                    </li>
-                </ul>
-            </div>
             <div class="main pd-top-50 mr-top-30">
                 <p class="p-1">Sed tortor in <span>quisque morbi</span> scelerisque etiam eu.</p>
                 <p class="p-2 pd-top-15">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc efficitur urna in
@@ -53,10 +43,11 @@
                     <button class="btn-1 d-flex align-center font-weight-600">Get Started</button>
                     <button class="btn-1 btn-2 d-flex align-center font-weight-400">Learn more</button>
                 </div>
-                <div class="d-flex flex-w justiy-center">
-                    <div class="row row-color wv-100 radius-150 align-center height-108 mr-bottom-47 pstn-rel box-11">
-                        <div class="pstn-rel border-1 col-12 col-lg-3 col-sm-6">
-                            <div class="right-border d-flex align-center gap-10 justiy-center pd-tb-17">
+                <div class="d-flex flex-w">
+                    <div
+                        class="row width-870 row-color wv-100 radius-150 align-center height-108 mr-bottom-47 pstn-rel box-11 border-r">
+                        <div class="pstn-rel border-1 col-12 col-lg-3 col-sm-6 col-md-4">
+                            <div class="right-border d-flex align-center gap-10 justiy-center pd-tb-17 right-border-11">
                                 <span>
                                     <svg width="23" height="29" viewBox="0 0 23 29" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -76,8 +67,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="pstn-rel border-1 col-12  col-lg-3 col-sm-6">
-                            <div class="right-border d-flex align-center gap-10 justiy-center pd-tb-17">
+                        <div class="pstn-rel border-1 col-12  col-lg-3 col-sm-6 col-md-4">
+                            <div class="right-border d-flex align-center gap-10 justiy-center pd-tb-17 right-border-11">
                                 <span>
                                     <img src="./assets/image/date.png" alt="">
                                 </span>
@@ -87,7 +78,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="pstn-rel border-1 col-12 col-lg-3 col-sm-6">
+                        <div class="pstn-rel border-1 col-12 col-lg-3 col-sm-6 col-md-4">
                             <div class="right-border d-flex align-center gap-10 justiy-center pd-tb-17">
                                 <span>
                                     <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
@@ -121,7 +112,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class=" col-12 border-1 col-lg-3 col-sm-6">
+                        <div class=" col-12 border-1 col-lg-3 col-sm-6 col-md-12">
                             <div class="d-flex align-center gap-10 justiy-center pd-tb-17">
                                 <button class="go-btn d-flex align-center justiy-center">GO CHECK</button>
                             </div>
@@ -493,6 +484,8 @@
             </div>
         </div>
     </section>
+
+    <script src="./assets/js/js.js"></script>
 </body>
 
 </html>
