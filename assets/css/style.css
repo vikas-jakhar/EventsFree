@@ -598,6 +598,10 @@
     line-height: 21px;
 }
 
+.width-fit {
+    width: fit-content;
+}
+
 .height-108 {
     min-height: 108px;
 }
