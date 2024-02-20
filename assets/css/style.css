@@ -613,6 +613,10 @@
         margin-right: 5%;
     }
 
+    .justiy-center-1 {
+        justify-content: center;
+    }
+
     .bg-1 {
         background-color: rgba(0, 0, 0, 0.8);
         width: 100%;
