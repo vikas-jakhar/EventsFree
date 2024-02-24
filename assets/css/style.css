@@ -39,11 +39,12 @@
 }
 
 .sctn-1 {
-    background-image: url(../image/Rectangle\ 18.png);
+    background-image: url(../image/Rectangle18.png);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     position: relative;
+    min-height: 100vh;
 }
 
 .sctn-1::after {
@@ -401,9 +402,9 @@
 }
 
 .lorem-2 {
-    font-size: 48px;
+    font-size: 37px;
     font-weight: 700;
-    line-height: 62px;
+    line-height: normal;
     letter-spacing: 0em;
     text-align: center;
     color: #FFFFFF;
@@ -443,9 +444,9 @@
 }
 
 .Explore {
-    font-size: 48px;
+    font-size: 37px;
     font-weight: 700;
-    line-height: 66px;
+    line-height: normal;
     letter-spacing: 0em;
     max-width: 338px;
     color: #000000;
@@ -598,6 +599,10 @@
     line-height: 21px;
 }
 
+.mr-top-24 {
+    margin-top: 24px;
+}
+
 .width-fit {
     width: fit-content;
 }
@@ -606,8 +611,17 @@
     min-height: 108px;
 }
 
-.width-870 {
-    max-width: 870px;
+.justiy-end {
+    justify-content: end;
+}
+
+.width-85 {
+    width: 85%;
+}
+
+
+.width-920 {
+    max-width: 920px;
 }
 
 @media (max-width:992px) {
@@ -772,8 +786,8 @@
         padding-right: 12px;
     }
 
-    .pd-left-100 {
-        padding-left: 100px;
+    .pd-left-50 {
+        padding-left: 50px;
     }
 
     .col-lg-12 {
@@ -787,8 +801,13 @@
         line-height: 96px;
     }
 
+
     .heading {
         font-size: 36px;
+    }
+    .lorem-2,.Explore{
+        font-size: 48px;
+        line-height: 62.4px;
     }
 
     .radius-150 {
