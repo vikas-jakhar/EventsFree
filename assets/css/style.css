@@ -606,7 +606,9 @@
 .height-108 {
     min-height: 108px;
 }
-
+.pd-top-30 {
+    padding-top: 30px;
+}
 .justiy-end {
     justify-content: end;
 }
